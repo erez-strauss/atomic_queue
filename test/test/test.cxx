@@ -6,10 +6,9 @@
 #define BOOST_TEST_MODULE atomic_queue
 #include <boost/test/unit_test.hpp>
 
-#include "atomic_queue_mutex.h"
-#include "atomic_queue.h"
-#include "moodycamel.h"
-#include "barrier.h"
+#include <libatomic_queue/atomic_queue_mutex.hxx>
+#include <libatomic_queue/atomic_queue.hxx>
+#include <libatomic_queue/barrier.hxx>
 
 #include <cstdint>
 #include <thread>
@@ -106,9 +105,9 @@ BOOST_AUTO_TEST_CASE(stress_pthread_spinlock) {
     stress<RetryDecorator<AtomicQueueSpinlock<unsigned, CAPACITY>>>();
 }
 
-BOOST_AUTO_TEST_CASE(stress_MoodyCamelQueue) {
-    stress<MoodyCamelQueue<unsigned, CAPACITY>>();
-}
+// BOOST_AUTO_TEST_CASE(stress_MoodyCamelQueue) {
+//     stress<MoodyCamelQueue<unsigned, CAPACITY>>();
+// }
 
 // BOOST_AUTO_TEST_CASE(stress_SpinlockHle) {
 //     stress<RetryDecorator<AtomicQueueSpinlockHle<unsigned, CAPACITY>>>();

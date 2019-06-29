@@ -4,8 +4,8 @@
 
 // Copyright (c) 2019 Maxim Egorushkin. MIT License. See the full licence in file LICENSE.
 
-#include "atomic_queue.h"
-#include "spinlock.h"
+#include <libatomic_queue/atomic_queue.hxx>
+#include <libatomic_queue/spinlock.hxx>
 
 #include <cassert>
 

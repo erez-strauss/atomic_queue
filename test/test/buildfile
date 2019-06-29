@@ -1,0 +1,7 @@
+libs =
+import libs += libatomic_queue%lib{atomic_queue}
+
+exe{test}: {hxx ixx txx cxx}{**} $libs
+
+cxx.poptions =+ "-I$out_root" "-I$src_root"
+cxx.libs =+ -pthread -lrt -lboost_unit_test_framework

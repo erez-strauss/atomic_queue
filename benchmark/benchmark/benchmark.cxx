@@ -2,11 +2,12 @@
 
 // Copyright (c) 2019 Maxim Egorushkin. MIT License. See the full licence in file LICENSE.
 
-#include "cpu_base_frequency.h"
-#include "atomic_queue_mutex.h"
-#include "atomic_queue.h"
-#include "moodycamel.h"
-#include "barrier.h"
+#include <libatomic_queue/cpu_base_frequency.hxx>
+#include <libatomic_queue/atomic_queue_mutex.hxx>
+#include <libatomic_queue/atomic_queue.hxx>
+#include <libatomic_queue/barrier.hxx>
+
+#include <benchmark/moodycamel.hxx>
 
 #include <boost/lockfree/spsc_queue.hpp>
 #include <boost/lockfree/queue.hpp>

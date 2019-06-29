@@ -4,7 +4,7 @@
 
 // Copyright (c) 2019 Maxim Egorushkin. MIT License. See the full licence in file LICENSE.
 
-#include "defs.h"
+#include <libatomic_queue/defs.hxx>
 
 #include <cstdlib>
 #include <atomic>

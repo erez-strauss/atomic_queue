@@ -1,0 +1,11 @@
+: 1
+name: test
+version: 0.1.0-a.0.z
+project: atomic_queue
+summary: test C++ executable
+license: proprietary
+url: https://example.org/atomic_queue
+email: maxim.egorushkin@gmail.com
+depends: * build2 >= 0.10.0
+depends: * bpkg >= 0.10.0
+#depends: libhello ^1.0.0
