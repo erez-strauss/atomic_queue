@@ -1,0 +1,6 @@
+project = atomic_queue
+
+using version
+using config
+using install
+using dist
