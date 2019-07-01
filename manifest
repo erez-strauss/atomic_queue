@@ -1,0 +1,11 @@
+: 1
+name: atomic_queue
+version: 2.0.0-a.0.z
+project: atomic_queue
+summary: atomic_queue C++ library benchmark
+license: MIT
+url: https://github.com/max0x7ba/atomic_queue
+email: maxim.egorushkin@gmail.com
+depends: * build2 >= 0.10.0
+depends: * bpkg >= 0.10.0
+#depends: libhello ^1.0.0
