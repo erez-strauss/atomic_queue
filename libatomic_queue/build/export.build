@@ -1,0 +1,6 @@
+$out_root/
+{
+  include libatomic_queue/
+}
+
+export $out_root/libatomic_queue/$import.target
